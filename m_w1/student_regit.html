@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息注册</title>
+    <style type="text/css">
+    body{
+            background-image: url("/images/3.jpg");
+            position: fixed;
+            z-index: 1;
+        }
+        form{
+            width: 300px;
+            height: 100px;
+            position: fixed;
+            z-index: 2;
+            left: 450px;
+            top: 200px;
+            border: 1px solid black;
+            background-color: white;
+        }
+
+        .div001{
+            text-align: center;
+
+        }
+        </style>
+
+</head>
+<body>
+    <form action="http://127.0.0.1:8088/regit.mysql" method="post">
+        <!--姓名-->
+        <div>
+            <label>
+                姓名：
+            </label>
+            <input type="text" name="name">
+
+        <!--密码-->
+        <div>
+            <label>
+                密码：
+            </label>
+            <input type="password" name="password">
+
+        </div>
+        <!--年龄-->
+        <div>
+            <label>
+                年龄：
+            </label>
+            <input type="text" name="age">
+
+        </div>
+        <!--性别-->
+        <div>
+            <label>
+                性别：
+            </label>
+            <input type="radio" name="gender" value="1">男
+            <input type="radio" name="gender" value="2">女
+
+        </div>
+        <!--提交-->
+        <div class="div001">
+            <input type="submit">
+            <input type="reset">
+        </div>
+
+    </form>
+</body>
+</html>
